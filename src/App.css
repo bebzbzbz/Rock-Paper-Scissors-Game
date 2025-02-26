@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Martian Mono";
+    src: url(./assets/fonts/MartianMono-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "Pixelify";
+    src: url(./assets/fonts/PixelifySans-VariableFont_wght.ttf);
+}
+
+:root {
+    --bg: rgb(242, 242, 242);
+    --primary: rgb(255, 11, 243);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    font-size: 3.5rem;
+    padding: 5% 0;
+    font-family: "Martian Mono", monospace;
+    font-weight: 400;
+    background-color: var(--bg);
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.userImg, .CPUImg {
+    z-index: -1;
+    position: absolute;
+    top: 33%;
+    height: 30vh;
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(245deg);
+}
+
+.userImg {
+    left: -4rem;
+}
+.CPUImg {
+    right: -4rem;
+}
+
+button {
+    padding: .5rem 1.5rem;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: "Pixelify", monospace;
+}
+button:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+.choices {
+    display: flex;
+    gap: 2rem;
+}
+.choices button {
+    width: 14rem;
+    font-size: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.score {
+    font-size: 70%;
+}
