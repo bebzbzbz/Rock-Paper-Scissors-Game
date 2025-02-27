@@ -62,11 +62,9 @@ const Game = () => {
     }
 
     useEffect(() => {
-        if (userChoice && CPUChoice) {
-            evalResult();
-            changeImgs();
-        }
-    }, [userChoice, CPUChoice]);
+        evalResult();
+        changeImgs();
+    }, [round]);
 
     const restartGame = () => {
         setUserChoice("")
