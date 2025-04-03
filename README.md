@@ -15,8 +15,9 @@
 - [Future Possibilities](#future-possibilities)
 
 ## Features
-<div style="display: grid; grid-template-columns: 1fr 1fr">
-    <ul>
+<div style="display: flex;">
+    <img style="width: 49%" src="./public/img/notice-screen.png">
+    <ul style="width: 49%">
         <li>Buttons with hover effects as user feedback</li>
         <li>Randomised CPU choices</li>
         <li>Infinite game with score tracking for user and CPU</li>
@@ -32,7 +33,6 @@
             </ul>
         </li>
     </ul>
-    <img src="./public/img/notice-screen.png">
 </div>
 
 ## Tech Stack
