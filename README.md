@@ -1,10 +1,10 @@
 # Rock Paper Scissors Game ✂️🪨📃
 
+<p>This is project is a simple, infinite game of Rock Paper Scissors built with React, featuring my own illustrations.</p>
+
 <div style="display: flex; justify-content: center;">
   <img src="./public/img/Macbook-Air-localhost.png" alt="Project Screenshot">
 </div>
-<br/>
-<p>This is project is a simple, infinite game of Rock Paper Scissors built with React, featuring my own illustrations.</p>
 
 ## Table of Contents 📑
 
@@ -16,8 +16,8 @@
 
 ## About
 <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; width: 100%">
-    <img src="./public/img/notice-screen.png">
-    <img src="./public/img/landscape.png">
+    <img style="width: 50%" src="./public/img/notice-screen.png">
+    <img style="width: 50%" src="./public/img/landscape.png">
 </div>
 
 ## Features
@@ -54,6 +54,6 @@ I used Figma for my original design process. I have also created the graphics fo
 
 <ul>
     <li>Bigger feedback for win or loss</li>
-    <li>setTimeout and countdown until result<li/>
+    <li>setTimeout and countdown until result</li>
     <li>Animation on notice screen</li>
 <ul/>
