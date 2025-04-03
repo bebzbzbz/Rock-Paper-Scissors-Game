@@ -15,7 +15,7 @@
 - [Future Possibilities](#future-possibilities)
 
 ## About
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%">
+<div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; width: 100%">
     <img src="./public/img/notice-screen.png">
     <img src="./public/img/landscape.png">
 </div>
