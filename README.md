@@ -8,25 +8,24 @@
 
 ## Table of Contents 📑
 
-- [About](#about)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Design](#design)
 - [Future Possibilities](#future-possibilities)
 
-## About
-<div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; width: 100%">
-    <img style="width: 50%" src="./public/img/notice-screen.png">
-    <img style="width: 50%" src="./public/img/landscape.png">
+## Features
+<div style="display: grid; grid-template-columns: 1fr 1fr">
+    <ul>
+        <li>Buttons for game choices and restart with hover effects as user feedback</li>
+        <li>Randomised CPU choices</li>
+        <li>Responsive layout optimised for different screens</li>
+        <li>Screen notice for user to flip device when in portrait mode</li>
+    </ul>
+    <img src="./public/img/notice-screen.png">
 </div>
 
-## Features
-<ul>
-    <li>Buttons for game choices and restart with hover effects as user feedback</li>
-    <li>Randomised CPU choices</li>
-    <li>Responsive layout optimised for different screens</li>
-    <li>Screen notice for user to flip device when in portrait mode</li>
-</ul>
+
+<img src="./public/img/landscape.png">
 
 ## Tech Stack
 
