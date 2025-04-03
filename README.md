@@ -1,7 +1,7 @@
 # Rock Paper Scissors Game ✂️🪨📃
 
 <div style="display: flex; justify-content: center;">
-  <img src="/img/Macbook-Air-localhost.png" alt="Project Screenshot">
+  <img src="./public/img/Macbook-Air-localhost.png" alt="Project Screenshot">
 </div>
 <br/>
 <p>This is project is a simple, infinite game of Rock Paper Scissors built with React, featuring my own illustrations.</p>
@@ -16,8 +16,8 @@
 
 ## About
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%">
-    <img src="/img/notice-screen.png">
-    <img src="/img/landscape.png">
+    <img src="./public/img/notice-screen.png">
+    <img src="./public/img/landscape.png">
 </div>
 
 ## Features
