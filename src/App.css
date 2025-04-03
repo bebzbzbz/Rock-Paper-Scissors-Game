@@ -49,7 +49,6 @@ body {
     height: 30vh;
     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(245deg);
 }
-
 .userImg {
     left: -4rem;
 }
@@ -76,6 +75,8 @@ button:hover {
 
 .choices {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 .choices button {
@@ -89,4 +90,34 @@ button:hover {
 
 .score {
     font-size: 70%;
+}
+
+.notice {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: var(--primary);
+    color: var(--bg);
+    font-family: "Pixelify";
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 992px) and (orientation: portrait) {
+    .notice {
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 2rem;
+    }
+    .choices button {
+        font-size: 1.5rem;
+    }
 }

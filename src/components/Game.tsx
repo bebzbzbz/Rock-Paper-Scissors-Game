@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
+import Button from "./Button";
+import Notice from "./Notice";
 
 const Game = () => {
-    const [userChoice, setUserChoice] = useState("")
-    const [CPUChoice, setCPUChoice] = useState("")
-    const [result, setResult] = useState("choose your move")
-    const [round, setRound] = useState(0)
-    const [userScore, setUserScore] = useState(0)
-    const [CPUScore, setCPUScore] = useState(0)
-    const [userImg, setUserImg] = useState("rock.svg")
-    const [CPUImg, setCPUImg] = useState("rock.svg")
+    const [userChoice, setUserChoice] = useState<string>("")
+    const [CPUChoice, setCPUChoice] = useState<string>("")
+    const [result, setResult] = useState<string>("choose your move")
+    const [round, setRound] = useState<number>(0)
+    const [userScore, setUserScore] = useState<number>(0)
+    const [CPUScore, setCPUScore] = useState<number>(0)
+    const [userImg, setUserImg] = useState<string>("rock.svg")
+    const [CPUImg, setCPUImg] = useState<string>("rock.svg")
 
     const CPUOptions = ["Rock", "Paper", "Scissors"]
 
@@ -78,7 +80,7 @@ const Game = () => {
     }
 
     return ( 
-        <>
+        <> 
             <div>
                 <p className="bold">Round {round}</p>
                 <button onClick={restartGame} className="restartBtn">restart</button>
@@ -90,16 +92,15 @@ const Game = () => {
             </div>
 
             <div className="choices">
-                <button onClick={() => 
-                    newRound("Rock")}>rock</button>
-                <button onClick={() => 
-                    newRound("Paper")}>paper</button>
-                <button onClick={() => 
-                    newRound("Scissors")}>scissors</button>
+                <Button text="rock" handler={() => newRound("Rock")}/>
+                <Button text="paper" handler={() => newRound("Paper")}/>
+                <Button text="scissors" handler={() => newRound("Scissors")}/>
             </div>
             
             <img src={`/img/user/${userImg}`} alt={userChoice} className="userImg"/>
             <img src={`/img/CPU/${CPUImg}`} alt={CPUChoice} className="CPUImg"/>
+
+            <Notice/>
         </>
     );
 }
