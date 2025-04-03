@@ -15,9 +15,9 @@
 - [Future Possibilities](#future-possibilities)
 
 ## Features
-<div style="display: flex;">
-    <img style="width: 49%" src="./public/img/notice-screen.png">
-    <ul style="width: 49%">
+<div style="display: flex; flex-direction: row; justify-content: center;">
+    <img src="./public/img/notice-screen.png">
+    <ul style="height: 300px">
         <li>Buttons with hover effects as user feedback</li>
         <li>Randomised CPU choices</li>
         <li>Infinite game with score tracking for user and CPU</li>
