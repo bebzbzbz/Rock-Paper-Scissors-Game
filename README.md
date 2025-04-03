@@ -10,22 +10,30 @@
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Installation & Setup](#installation-&-setup)
 - [Design](#design)
 - [Future Possibilities](#future-possibilities)
 
 ## Features
 <div style="display: grid; grid-template-columns: 1fr 1fr">
     <ul>
-        <li>Buttons for game choices and restart with hover effects as user feedback</li>
+        <li>Buttons with hover effects as user feedback</li>
         <li>Randomised CPU choices</li>
+        <li>Infinite game with score tracking for user and CPU</li>
+        <li>Restart game option</li>
         <li>Responsive layout optimised for different screens</li>
         <li>Screen notice for user to flip device when in portrait mode</li>
+        <li>Classic game rules
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beat Paper</li>
+                <li>Paper beats Rock</li>
+                <li>If the choices are same, it's a draw</li>
+            </ul>
+        </li>
     </ul>
     <img src="./public/img/notice-screen.png">
 </div>
-
-
-<img src="./public/img/landscape.png">
 
 ## Tech Stack
 
@@ -44,6 +52,22 @@
 **Version Control:**  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
 
+## Installation & Setup
+
+You can play the game <a href="https://bz-rock-paper-scissors.vercel.app/" title="Play game in browser">here</a> in your local browser. To run the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bebzbzbz/Rock-Paper-Scissors-Game.git
+   ```
+
+2. **Install dependencies & run the development server:**
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+3. **Open your local host and play! 🕹️**
 
 ## Design
 
